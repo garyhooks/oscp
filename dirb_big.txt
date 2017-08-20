@@ -2398,7 +2398,7 @@ anuncios
 anunturi
 anupam
 anvils
-användare
+anvÃ¤ndare
 anwender
 any
 anymedia
@@ -16069,7 +16069,7 @@ sec_id
 seccio
 seccion
 secciones
-secci�
+secció
 second
 second-love-nl3
 secondary
