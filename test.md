@@ -40,6 +40,7 @@ Installed on Windows XP up to 2003 by default
 >mkdir /tftp
 
 >aftpd --daemon --port 69 /tftp
+
 >cp /file/you/want /tftp
 
 On Windows 
