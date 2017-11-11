@@ -1,3 +1,9 @@
+## Nmap
+
+> nmap -p 80 <target IP> --script http-put --script-args http-put.url='/remotefile.php',http-put.file='/root/myfile.php'
+
+
+
 ## TFTP
 
 Installed on Windows XP up to 2003 by default
