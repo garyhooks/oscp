@@ -1,6 +1,5 @@
 
 ### Simple Web Servers
-___
 
 python3 -m http.server
 
