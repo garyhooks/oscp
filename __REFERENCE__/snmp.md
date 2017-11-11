@@ -38,3 +38,19 @@ snmp-check
 
 snmp-check <IP>
 
+
+
+
+
+
+
+root@kali:~# echo public > community
+root@kali:~# echo private >> community
+root@kali:~# echo manager >> community
+root@kali:~# for ip in $(seq 1 254);do echo 10.11.1.$ip;done > ips
+root@kali:~# onesixtyone -c community -i ips
+
+
+
+
+
