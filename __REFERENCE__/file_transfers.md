@@ -1,6 +1,6 @@
 ## Nmap
 
-> nmap -p 80 <target IP> --script http-put --script-args http-put.url='/remotefile.php',http-put.file='/root/myfile.php'
+> nmap -p 80 *TARGET_IP* --script http-put --script-args http-put.url='/remotefile.php',http-put.file='/root/myfile.php'
 
 
 
