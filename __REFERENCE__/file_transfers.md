@@ -60,3 +60,6 @@ cp /file/you/want /tftp
 
 On Windows 
 > tftp -i --yourIP-- get file.exe
+
+
+
