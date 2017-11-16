@@ -8,7 +8,9 @@ python -m SimpleHTTPServer 80
 
 ### Shell Upgrade!
 
-python -c "import pty; pty.spawn('/bin/bash')"
+>python -c "import pty; pty.spawn('/bin/bash')"
+
+>/bin/bash -i
 
 
 ### Post Exploitation
