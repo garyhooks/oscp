@@ -1,4 +1,4 @@
-## What OS is the target running:
+#### What OS is the target running:
 `systeminfo | findstr /B /C:"OS Name" /C:"OS Version"`
 
 #### Hostname
@@ -27,7 +27,16 @@
 
 `netsh firewall show config`
 
-####
+#### Running Processes and Scheduled Tasks
+
+`schtasks /query /fo LIST /v`
+
+`tasklist /SVC`
+
+`net start`
+
+`DRIVERQUERY`
+
 
 ####
 
