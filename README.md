@@ -1,2 +1,1 @@
-# hack
-Designed for automated enumeration for ethical hacking and penetration testing
+A collection of resources collected and developed during OSCP certification
