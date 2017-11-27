@@ -38,3 +38,15 @@
 `DRIVERQUERY`
 
 
+
+
+sc query type= service
+
+sc qc <SERVICE NAME>
+  
+  
+wmic useraccount where name='robert' get sid
+
+
+
+accesschk.exe -uwdqs Users c:\
