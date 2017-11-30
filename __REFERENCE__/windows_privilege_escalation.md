@@ -65,3 +65,6 @@ Run this:
 > powershell -ExecutionPolicy Bypass -File c:\Windows\temp\run.ps1
 
 
+
+
+netsh firewall set opmode mode=DISABLE
