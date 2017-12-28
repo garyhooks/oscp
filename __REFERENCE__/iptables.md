@@ -1,9 +1,9 @@
 
-'''
+```
 -s SOURCE
 -d DESTINATION
 -j What to do if the packet matches this rule
-'''
+```
 
 > iptables -I INPUT 1 -s 10.11.1.5 -j ACCEPT
 
@@ -23,10 +23,10 @@ or
 
 #### show the rules and data
 
-'''
+```
 -L list the rules
 -v VERBOSE
 -n numeric output
-'''
+```
 
 > iptables -vn -L
