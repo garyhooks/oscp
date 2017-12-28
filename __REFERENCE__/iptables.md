@@ -20,3 +20,13 @@ or
 
 #### Flush all rules
 > iptables --flush
+
+#### show the rules and data
+
+'''
+-L list the rules
+-v VERBOSE
+-n numeric output
+'''
+
+> iptables -vn -L
