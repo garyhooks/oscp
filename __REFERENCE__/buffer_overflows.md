@@ -63,6 +63,8 @@ except:
 
 ```
 
+#### Pattern Offset
+
 After running this, note the EIP hex bytes, in this cas 39 69 44 38, then do:
 
 ```
