@@ -1,5 +1,10 @@
 ## Buffer Overflows 
 
+Page 146 in Manual
+
+Useful Guide:
+http://www.primalsecurity.net/0x0-exploit-tutorial-buffer-overflow-vanilla-eip-overwrite-2/
+
 #### fuzzing.py 
 This is desigend to crash a service in order to try to overwrite the EIP register
 
@@ -185,6 +190,12 @@ Now we can search within the selected DLL or module for the op code:
 
 ```
 !mona find -s "\xff\xe4" -m slmfc.dll
+```
+
+Note that if there's no DLL's that are available, then try to locate JMP ESP instructions within the current program itself:
+
+```
+!mona jmp -r esp
 ```
 
 From the results pick one that does not have any bad characters.  Note the address on the left side. 
