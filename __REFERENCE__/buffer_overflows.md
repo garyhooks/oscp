@@ -152,3 +152,12 @@ except:
 ```
 
 
+#### Redirecting Execution Flow
+
+We now need to find a way to redirect the execution flow to our own code in memory.  We can't replace the B's in the EIP with the ESP value as this changes on each crash.  This is because each time the service starts it has a different memory allocation pool.
+
+We can use the *JMP ESP*
+
+
+
+
