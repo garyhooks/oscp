@@ -45,7 +45,18 @@
 `wmic useraccount where name='robert' get sid`
 
 
+## Services Permissions
+
+Write access (w)
+surpress errors (u)
+verbose (v)
+Omit banner (q)
+Specify name of service (c) - * indicates wildcard
+Only process directories or top level keys (d)
+
 `accesschk.exe -uwdqs Users c:\ /accepteula`
+
+`accesschk.exe -uwcqv "Authenticated Users" * /accepteula`
 
 
 
