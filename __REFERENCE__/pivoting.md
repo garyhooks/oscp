@@ -4,6 +4,8 @@ Useful Resource:
 
 > https://artkond.com/2017/03/23/pivoting-guide/
 
+> https://netsec.ws/?p=278
+
 ### SSH 
 
 > ssh username@10.1.1.236 -D 1080
