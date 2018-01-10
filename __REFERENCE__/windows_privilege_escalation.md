@@ -1,4 +1,9 @@
 
+###
+
+Check if MS10-015 applies to host:
+https://www.exploit-db.com/exploits/11199/
+
 ### Key Directories and Files
 
 Check for the existance of these files, they often contain plain text passwords
