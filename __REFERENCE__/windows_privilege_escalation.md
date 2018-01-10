@@ -1,3 +1,15 @@
+
+### Key Directories and Files
+
+Check for the existance of these files, they often contain plain text passwords
+
+```
+c:\sysprep.inf
+c:\sysprep\sysprep.xml
+%WINDIR%\Panther\Unattend\Unattended.xml
+%WINDIR%\Panther\Unattended.xml
+```
+
 #### What OS is the target running:
 `systeminfo | findstr /B /C:"OS Name" /C:"OS Version"`
 
@@ -79,3 +91,11 @@ Run this:
 ### Other Useful Commands
 
 > netsh firewall set opmode mode=DISABLE
+
+
+### Check for AlwaysInstalledElevated 
+
+```
+reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer\AlwaysInstallElevated
+reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer\AlwaysInstallElevated
+```
