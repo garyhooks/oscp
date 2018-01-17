@@ -1,9 +1,9 @@
 
 ### Simple Web Servers
 
-python3 -m http.server
+>python3 -m http.server
 
-python -m SimpleHTTPServer 80
+>python -m SimpleHTTPServer 80
 
 
 ### Shell Upgrade!
