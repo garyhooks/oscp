@@ -42,3 +42,6 @@ Add new user and add to local admin group
 > privilege::debug
 
 > sekurlsa::logonpasswords
+
+## Set GB keyboard in Linux
+> setxkbmap -layout gb
