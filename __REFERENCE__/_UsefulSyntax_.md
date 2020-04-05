@@ -1,4 +1,9 @@
 ### Linux VM - Mounting a Windows Share - Script ###
+Simple Version:
+```
+sudo /usr/bin/vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other,nonempty
+```
+Slightly Better Version:
 ```
 #!/bin/bash
 
