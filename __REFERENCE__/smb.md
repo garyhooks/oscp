@@ -15,6 +15,10 @@
 	..__MSBROWSE__. <01> - <GROUP> B <ACTIVE> 
 ```
 
+## Samba Enumeration with Nmap
+
+```nmap -sV --script=smb-enum-shares -p445 $ip```
+
 ## Connect to Share without Password
 
 
