@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # Author: Gary Hooks
-# Twitter: @twintel_online
 # GitHub: http://www.github.com/garyhooks
 # Designed for the OSCP to automate some of the initial enumeration tasks
 #
