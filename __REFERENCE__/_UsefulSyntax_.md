@@ -17,6 +17,20 @@ done
 sleep 2s
 ```
 
+### Adjusting the Scale ###
+
+Find out the name of the screen 
+
+> xrandr | grep connected | grep -v disconnected | awk '{print $1}'
+
+Zoom in by 20%
+> xrandr --output screen-name --scale 0.8x0.8
+
+Zoom out by 20%
+> xrandr --output screen-name --scale 1.2x1.2
+
+Reset xrandr
+> xrandr --output screen-name --scale 1x1
 
 ### Simple Web Servers
 
