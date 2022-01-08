@@ -1,5 +1,5 @@
 
-#nmap
+##nmap
 
 Use default scripts
 >-sc 
