@@ -27,3 +27,8 @@ Spawn Shell
 
 Winpeas
 >https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
+
+
+#### History of windows POSH commands
+
+>$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history
