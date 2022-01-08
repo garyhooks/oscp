@@ -4,7 +4,20 @@
 Use default scripts
 >-sc 
 
-gobuster dir -u 10.10.11.104 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x .php,.html,.txt
+
+### gobuster
+gobuster dir -u 10.129.192.188 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x .php,.html,.txt
 
 
+#### website plugin 
 
+Wappalyzer
+
+#### MSSQL Server
+
+Connect to MSSQL
+Impact Connection repository
+>mssqlclient.py 
+
+Spawn Shell
+>xp_cmdshell
