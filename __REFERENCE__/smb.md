@@ -49,6 +49,10 @@ OS=[Windows Server 2003 3790 Service Pack 1] Server=[Windows Server 2003 5.2]
 	
 ```
 
+## May need to escape characters
+
+>smbclient \\\\10.129.1.12\\WorkShares
+
 ## Connect to specific directory
 
 >smbclient //DAVID/public_access -I 10.11.1.31 -N
