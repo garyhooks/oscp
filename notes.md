@@ -21,3 +21,9 @@ Impact Connection repository
 
 Spawn Shell
 >xp_cmdshell
+
+
+#### Privesc in Windows - script
+
+Winpeas
+>https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
