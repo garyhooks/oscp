@@ -5,6 +5,7 @@ xcopy "C:\SomeFolderName" "D:\SomeFolderName" /h /i /c /k /e /r /y
 ```
 
 Copy C:\SomeFolderName to the D drive
+
 /h copies hidden and system files also
 /i if destination does not exist and copying more than one file, assume that destination must be a directory
 /c continue copying even if error occurs
