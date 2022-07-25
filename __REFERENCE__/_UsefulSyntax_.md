@@ -1,3 +1,19 @@
+### xcopy syntax ###
+
+```
+xcopy "C:\SomeFolderName" "D:\SomeFolderName" /h /i /c /k /e /r /y
+```
+
+Copy C:\SomeFolderName to the D drive
+/h copies hidden and system files also
+/i if destination does not exist and copying more than one file, assume that destination must be a directory
+/c continue copying even if error occurs
+/k copies attributes
+/e copies directories and subdirectories, including empty ones
+/r overwrites read-only files
+/y suppress prompting to confirm whether you want to overwrite a file
+/z Copies over a network in restartable mode.
+
 ### Linux VM - Mounting a Windows Share - Script ###
 Simple Version:
 ```
